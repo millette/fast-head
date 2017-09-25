@@ -15,7 +15,7 @@ yarn add fast-head
 ```js
 const fastHead = require('fast-head');
 
-fastHead('unicorns')
+fastHead('http://www.yamaska.ca/')
   .then(({ elapsed, headers, statusCode, error }) => {
     // either headers and status code are filled,
     // or it's error
