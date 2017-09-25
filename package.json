@@ -1,0 +1,34 @@
+{
+  "name": "fast-head",
+  "version": "0.0.0",
+  "description": "Fetch http(s) headers and statusCode or error.",
+  "main": "index.js",
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": ">=6"
+  },
+  "repository": "millette/fast-head",
+  "author": {
+    "name": "Robin Millette",
+    "email": "robin@millette.info",
+    "url": "http://robin.millette.info/"
+  },
+  "keywords": [
+    "http",
+    "https",
+    "head",
+    "headers",
+    "timeout"
+  ],
+  "scripts": {
+    "dev": "node index",
+    "lint": "standard",
+    "test": "standard && nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "nyc": "^11.2.1",
+    "standard": "^10.0.3"
+  }
+}
