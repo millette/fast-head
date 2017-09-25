@@ -45,5 +45,4 @@ test('bad https', async t => {
 })
 
 test('bad URL', t => t.throws(fn('http'), 'Bad URL'))
-
 test('bad URL (string only)', t => t.throws(fn(url.parse('http://www.yamaska.ca/')), 'Bad URL'))

@@ -39,9 +39,13 @@ Default: `5000`
 ## Contribute
 Contributions are appreciated. Here are a few ideas to get you started:
 
-* #1
-* #2
-* #3
+* [add http2 support][1]
+* [add url.parse() support][2]
+* [add new URL() support][3]
 
 ## License
 AGPL-v3 © 2017 [Robin Millette](http://robin.millette.info)
+
+[1]: https://github.com/millette/fast-head/issues/1
+[2]: https://github.com/millette/fast-head/issues/2
+[3]: https://github.com/millette/fast-head/issues/3
