@@ -36,12 +36,20 @@ Type: `string`
 Type: `number` in ms<br>
 Default: `5000`
 
+See fastHead.defaultTimeout.
+
+### fastHead.defaultTimeout
+Type: `number` in ms
+
+To obtain the value of the default timeout. Since there's a single `fastHead`, it's best not to change this field.
+
 ## Contribute
 **Contributions are appreciated!** Here are a few ideas to get you started:
 
 * [add http2 support][1]
 * [add url.parse() support][2]
 * [add new URL() support][3]
+* [make fastHead.defaultTimeout read-only][4]
 
 ## License
 AGPL-v3 © 2017 [Robin Millette](http://robin.millette.info)
@@ -49,3 +57,4 @@ AGPL-v3 © 2017 [Robin Millette](http://robin.millette.info)
 [1]: https://github.com/millette/fast-head/issues/1
 [2]: https://github.com/millette/fast-head/issues/2
 [3]: https://github.com/millette/fast-head/issues/3
+[4]: https://github.com/millette/fast-head/issues/4
