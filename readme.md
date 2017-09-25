@@ -37,7 +37,7 @@ Type: `number` in ms<br>
 Default: `5000`
 
 ## Contribute
-Contributions are appreciated. Here are a few ideas to get you started:
+**Contributions are appreciated!** Here are a few ideas to get you started:
 
 * [add http2 support][1]
 * [add url.parse() support][2]
