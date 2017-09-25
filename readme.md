@@ -41,7 +41,7 @@ See fastHead.defaultTimeout.
 ### fastHead.defaultTimeout
 Type: `number` in ms
 
-To obtain the value of the default timeout. Since there's a single `fastHead`, it's best not to change this field.
+To obtain the value of the default timeout. Since there's a single `fastHead`, it's best not to change this field. Want to **contribute** and [make it read-only?][4]
 
 ## Contribute
 **Contributions are appreciated!** Here are a few ideas to get you started:
