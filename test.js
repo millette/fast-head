@@ -28,8 +28,11 @@ test('normal, 10s timeout', async t => {
 
 test('timeout', async t => {
   const result = await fn('https://www.mun-stedg.qc.ca/')
-  t.truthy(result.elapsed >= fn.defaultTimeout)
-  t.is(result.error, 'Error: socket hang up')
+  if (result.elapsed >= fn.defaultTimeout) {
+    t.is(result.error, 'Error: socket hang up')
+  } else {
+    t.is(result.error, 'Error: read ECONNRESET')
+  }
 })
 
 test('bad https', async t => {
