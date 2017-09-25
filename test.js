@@ -29,9 +29,10 @@ test('normal, 10s timeout', async t => {
 test('timeout', async t => {
   const result = await fn('https://www.mun-stedg.qc.ca/')
   if (result.elapsed >= fn.defaultTimeout) {
-    t.is(result.error, 'Error: socket hang up')
+    // t.is(result.error, 'Error: socket hang up')
+    t.is(result.error, 'Error: Timeout')
   } else {
-    t.is(result.error, 'Error: read ECONNRESET')
+    t.truthy((result.error === 'Error: connect ECONNREFUSED 68.178.254.168:443') || (result.error === 'Error: read ECONNRESET'))
   }
 })
 

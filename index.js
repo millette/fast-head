@@ -40,12 +40,14 @@ const headNative = (url, timeout) => new Promise((resolve, reject) => {
   // don't use fat-arrow function, we need 'this'
   const onSocket = function () {
     startedAt = Date.now()
-    // abort() will trigger error event
-    timer = setTimeout(() => this.abort(), timeout)
+    timer = setTimeout(() => {
+      this.abort()
+      done(new Error('Timeout'))
+    }, timeout)
   }
 
   httpOrHttps[scheme]
-    .request(Object.assign({ method, timeout }, parseUrl(url)), done)
+    .request(Object.assign({ agent: false, method, timeout }, parseUrl(url)), done)
     .once('error', done)
     .once('socket', onSocket)
     .end()
