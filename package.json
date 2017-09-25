@@ -24,10 +24,11 @@
     "dev": "node index",
     "lint": "standard",
     "test": "standard && nyc ava",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "standard && nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
     "ava": "^0.22.0",
+    "coveralls": "^2.13.1",
     "nyc": "^11.2.1",
     "standard": "^10.0.3"
   }
