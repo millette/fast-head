@@ -1,6 +1,6 @@
 {
   "name": "fast-head",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Fetch http(s) headers and statusCode or error.",
   "main": "index.js",
   "license": "AGPL-3.0",
